@@ -1,6 +1,5 @@
 import firebase from 'firebase';
 
-
   const firebaseConfig = {
     apiKey: "AIzaSyAudkKaXaDPovCMPiQ_UPs_pT2TYr-QejA",
     authDomain: "eventos-643c5.firebaseapp.com",
@@ -11,4 +10,6 @@ import firebase from 'firebase';
     appId: "1:281533676428:web:fb50842b3f2eaa10d834a9"
   };
   // Initialize Firebase
- export default firebase.initializeApp(firebaseConfig);
+
+ firebase.initializeApp(firebaseConfig);
+ export default firebase;

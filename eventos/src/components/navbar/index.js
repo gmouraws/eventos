@@ -8,7 +8,7 @@ function Navbar(){
     const dispatch = useDispatch();
     return (
         <nav className="navbar navbar-expand-lg">
-            <span className="navbar-brand text-white font-weight-bold" >Eventos</span>
+            <i class="fas fa-theater-masks text-white fa-2x"></i>
             
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                 <i className="fas fa-bars text-white"></i>
@@ -23,10 +23,10 @@ function Navbar(){
                         useSelector(state => state.usuarioLogado) > 0 ?
                         <>       
                             <li className="nav-item active">
-                                <Link className="nav-link" to="">Publicar Evento</Link>
+                                <Link className="nav-link" to="/eventocadastro">Publicar Evento</Link>
                             </li>
                             <li className="nav-item active">
-                                <Link className="nav-link" to="">Meus Eventos</Link>
+                                <Link className="nav-link" to="/eventos/meus">Meus Eventos</Link>
                             </li>
                             <li className="nav-item active">
                                 <Link className="nav-link" onClick={() => dispatch({type: 'LOG_OUT'})}>Sair</Link>
@@ -35,10 +35,10 @@ function Navbar(){
                         :
                         <>
                             <li className="nav-item active">
-                                <Link className="nav-link" to="NovoUsuario">Cadastrar</Link>
+                                <Link className="nav-link" to="/NovoUsuario">Cadastrar</Link>
                             </li>
                             <li className="nav-item active">
-                                <Link className="nav-link" to="Login">Login</Link>
+                                <Link className="nav-link" to="/Login">Login</Link>
                             </li>
                         </>   
                     }                 

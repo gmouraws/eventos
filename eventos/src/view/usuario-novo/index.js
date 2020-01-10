@@ -12,7 +12,7 @@ function NovoUsuario(){
     const [senha, setSenha] = useState();
     const [msgTipo, setMsgTipo] = useState();
     const [msg, setMsg] = useState();
-    const [carregando, setCarregando] = useState();
+    const [carregando, setCarregando] = useState();    
 
     function cadastrar (){
         setCarregando(1);
@@ -65,9 +65,9 @@ function NovoUsuario(){
                 }
                 
                 <div className="msg-login text-black text-center my-5">
-                {msgTipo === 'sucesso' && <span><strong>Uhuul.</strong> Usuário cadastrado com sucesso! &#128526;</span>}                    
-                {msgTipo === 'erro' && <span><strong>Ops.</strong> {msg} &#128546;</span>}
-            </div>
+                    {msgTipo === 'sucesso' && <span><strong>Uhuul.</strong> Usuário cadastrado com sucesso! &#128526;</span>}                    
+                    {msgTipo === 'erro' && <span><strong>Ops.</strong> {msg} &#128546;</span>}
+                </div>
             </form>
         </div>
         </>
